@@ -90,7 +90,7 @@ func appLocalLibCanvasrendererJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "app/local/lib/CanvasRenderer.js", size: 25097, mode: os.FileMode(420), modTime: time.Unix(1512757207, 0)}
+	info := bindataFileInfo{name: "app/local/lib/CanvasRenderer.js", size: 25097, mode: os.FileMode(420), modTime: time.Unix(1512680661, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -110,7 +110,7 @@ func appLocalLibProjectorJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "app/local/lib/Projector.js", size: 21011, mode: os.FileMode(420), modTime: time.Unix(1512757207, 0)}
+	info := bindataFileInfo{name: "app/local/lib/Projector.js", size: 21011, mode: os.FileMode(420), modTime: time.Unix(1512680668, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -130,7 +130,7 @@ func appLocalLibTrackballcontrolsJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "app/local/lib/TrackballControls.js", size: 14044, mode: os.FileMode(420), modTime: time.Unix(1512757207, 0)}
+	info := bindataFileInfo{name: "app/local/lib/TrackballControls.js", size: 14044, mode: os.FileMode(420), modTime: time.Unix(1512680679, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -150,7 +150,7 @@ func appLocalLibInit3dJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "app/local/lib/init3d.js", size: 674, mode: os.FileMode(420), modTime: time.Unix(1512757207, 0)}
+	info := bindataFileInfo{name: "app/local/lib/init3d.js", size: 674, mode: os.FileMode(420), modTime: time.Unix(1512680892, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -170,7 +170,7 @@ func appLocalLibOnloadJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "app/local/lib/onload.js", size: 189, mode: os.FileMode(420), modTime: time.Unix(1512757207, 0)}
+	info := bindataFileInfo{name: "app/local/lib/onload.js", size: 189, mode: os.FileMode(420), modTime: time.Unix(1512746298, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -190,7 +190,7 @@ func appLocalLibSnowMinJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "app/local/lib/snow.min.js", size: 195488, mode: os.FileMode(420), modTime: time.Unix(1512757912, 0)}
+	info := bindataFileInfo{name: "app/local/lib/snow.min.js", size: 195488, mode: os.FileMode(420), modTime: time.Unix(1512759671, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -210,7 +210,7 @@ func appLocalStyleSnowCss() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "app/local/style/snow.css", size: 2801, mode: os.FileMode(420), modTime: time.Unix(1512757207, 0)}
+	info := bindataFileInfo{name: "app/local/style/snow.css", size: 2801, mode: os.FileMode(420), modTime: time.Unix(1512677086, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }

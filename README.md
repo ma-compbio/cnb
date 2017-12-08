@@ -1,4 +1,6 @@
 # CMU Nucleome Browser
+[![Go Report Card](https://goreportcard.com/badge/github.com/nbrowser/cnb)](https://goreportcard.com/report/github.com/nbrowser/cnb)
+[![Licenses](https://img.shields.io/badge/license-gpl3-orange.svg)](https://    opensource.org/licenses/GPL-3.0)
 
 ## Introduction
 *CMU Nucleome Browser* is an extendable genome browser desktop/web application for integrating all kinds of nucleome related data distributed on the internet or in your local machine.
