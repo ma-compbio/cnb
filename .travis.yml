@@ -1,0 +1,4 @@
+language: go
+script: go get github.com/nbrowser/cnb
+notifications:
+        email: false
