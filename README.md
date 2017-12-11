@@ -25,6 +25,9 @@ Now it supports bigwig, bigbed and hic format files and as demonstration it has 
 ### Multi Windows (Example: genome coordinates related image panel)
 ![FISH data](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/ext_500px.gif)
 
+### User Sessions Manager 
+![Session & Google Sheet](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/session_500px.gif)
+
 ## Install
 *CMU Nucleome Browser* is implemented in Go and JavaScript. It can be installed in OSX, windows, linux machines.
 
