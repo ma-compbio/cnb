@@ -18,8 +18,13 @@ Now it supports bigwig, bigbed and hic format files and as demonstration it has 
 ![How to Navigate](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nav_500px.gif)
 ### Select tracks
 ![How to Select Tracks](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/select_500px.gif)
-### DNA 3D structure panel
+
+### Multi Panels (Example: DNA 3D structure) 
 ![DNA 3D structure](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/3d_500px.gif)
+
+### Multi Windows (Example: genome coordinates related image panel)
+![FISH data](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/ext_500px.gif)
+
 ## Install
 *CMU Nucleome Browser* is implemented in Go and JavaScript. It can be installed in OSX, windows, linux machines.
 
