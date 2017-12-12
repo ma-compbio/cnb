@@ -74,8 +74,9 @@ if you just want to start a web server instead of desktop application , you can 
 `cnb app -i [google-sheet-id or excel filename] -m web`
 
 Then open "http://127.0.0.1:8080" in your web browser.
-
+### Input GSheet or Xls
 [![google sheet example](https://img.shields.io/badge/example-gsheet-green.svg?style=flat)](https://docs.google.com/spreadsheets/d/1WaChnccn5iyKHm1ccZhRHSZmpzW7pPPrpGTSGoKTKO4/edit?usp=sharing)
+
 
 ## Powered by
 [![d3js](https://img.shields.io/badge/javascript-d3js-yellow.svg?style=flat)](http://d3js.org)
