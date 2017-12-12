@@ -18,6 +18,8 @@ In image panel, it support most main stream image format.
 More types of panel and customized panel interface will be added in the future.
 
 
+
+
 **Figure** CMU Nucleome Browser Design and Concepts
 ![Nbrowser](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nbrowser.png)
 
@@ -29,6 +31,7 @@ More types of panel and customized panel interface will be added in the future.
 [![Web Application](https://img.shields.io/badge/CMU-Nucleome--Browser-green.svg?style=for-the-badge)](http://genome.compbio.cs.cmu.edu:8080)
 ### Quick Start
 #### Browse genome
+:exclamation:  **Hint** right click brush region to update to selected coordinates. 
 ![How to Navigate](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nav_500px.gif)
 #### Select tracks
 ![How to Select Tracks](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/select_500px.gif)
@@ -74,7 +77,7 @@ if you just want to start a web server instead of desktop application , you can 
 `cnb app -i [google-sheet-id or excel filename] -m web`
 
 Then open "http://127.0.0.1:8080" in your web browser.
-### Input GSheet or Xls
+#### Input GSheet or Xls
 [![google sheet example](https://img.shields.io/badge/example-gsheet-green.svg?style=flat)](https://docs.google.com/spreadsheets/d/1WaChnccn5iyKHm1ccZhRHSZmpzW7pPPrpGTSGoKTKO4/edit?usp=sharing)
 
 
