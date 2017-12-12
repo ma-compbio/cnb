@@ -1,6 +1,5 @@
 language: go
-<<<<<<< HEAD
-
+sudo: false
 go:
   - 1.8.x
   - tip
@@ -9,12 +8,7 @@ before_install:
   - go get -t -v ./...
 
 script:
-  - go test -race -coverprofile=coverage.txt -covermode=atomic
+  - go test
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
-=======
-script: go get github.com/nbrowser/cnb
-notifications:
-        email: false
->>>>>>> 77065b57254318939cd2bd38fdd0ee1ecce8e314
+  - bash <(curl -s https://codecov.io/bash
