@@ -11,10 +11,15 @@
 ## Introduction
 *CMU Nucleome Browser* is an interactively browser web/desktop mixture application/platform with great extendibility for integrating distributed heterogeneous nucleome related data.
 It is built with a communicatable multi [window/panel platform](https://github.com/nbrowser/sand) and  configurable , composable, reusable, event-driven panel modules for browsing different type or chromosomes coordinate related data. 
+
 Currently , It mainly provides 3 types of panels. 
+
 The first one is Genome Browser panel , which supports [bigwig](http://genome.ucsc.edu/goldenPath/help/bigWig.html), [bigbed](http://genome.ucsc.edu/goldenPath/help/bigBed.html) and [juicebox hic](https://github.com/theaidenlab/juicer/wiki/Data)  format files as tracks. 
-In 3d structrue panel, it supports PDB style ascii text file format. Here's [an example file](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/data/structure_3.txt) for 3d structure input.
-In image panel, it support most main stream image format. 
+
+3d structrue panel supports PDB style ascii text file format. Here's [an example file](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/data/structure_3.txt) for 3d structure input.
+
+image panel supports most main stream image format. 
+
 More types of panel and customized panel interface will be added in the future.
 
 
