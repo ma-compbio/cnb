@@ -9,10 +9,23 @@
 [![MacOS](https://img.shields.io/badge/binary-macos-yellow.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/mac/cnb)
 
 ## Introduction
-*CMU Nucleome Browser* is an interactively browser web/desktop mixture application with great extendibility for integrating distributed heterogeneous nucleome related data. 
-Now it supports bigwig, bigbed and hic format files and as demonstration it has a simple panel module for 3d DNA structure.
+*CMU Nucleome Browser* is an interactively browser web/desktop mixture application/platform with great extendibility for integrating distributed heterogeneous nucleome related data.
+
+It is built with a communicatable multi window/panel platform and  configurable , composable, reusable, event-driven panel modules for browsing different type data. 
 
 
+Currently , It mainly provides 3 types of panels. 
+
+The first one is Genome Browser panel , which supports [bigwig](http://genome.ucsc.edu/goldenPath/help/bigWig.html), [bigbed](http://genome.ucsc.edu/goldenPath/help/bigBed.html) and [juicebox hic](https://github.com/theaidenlab/juicer/wiki/Data)  format files as tracks. 
+
+In 3d structrue panel, it supports PDB style ascii text file format. Here's [an example file](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/data/structure_3.txt) for 3d structure input.
+
+In image panel, it support most main stream image format. 
+
+More types of panel and customized panel interface will be added in the future.
+
+
+**Figure** CMU Nucleome Browser Design and Concepts
 ![Nbrowser](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nbrowser.png)
 
 
@@ -21,22 +34,24 @@ Now it supports bigwig, bigbed and hic format files and as demonstration it has 
 
 ## Web Application
 [![Web Application](https://img.shields.io/badge/CMU-Nucleome--Browser-green.svg?style=for-the-badge)](http://genome.compbio.cs.cmu.edu:8080)
-## Quick Start
-### Browse genome
+### Quick Start
+#### Browse genome
 ![How to Navigate](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nav_500px.gif)
-### Select tracks
+#### Select tracks
 ![How to Select Tracks](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/select_500px.gif)
 
-### Multi Panels (Example: DNA 3D structure) 
+#### Multi Panels (Example: DNA 3D structure) 
 ![DNA 3D structure](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/3d_500px.gif)
 
-### Multi Windows (Example: genome coordinates related image panel)
+#### Multi Windows (Example: genome coordinates related image panel)
+The *CMU Nucleome Browser* supports extend window system.
+
 ![FISH data](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/ext_500px.gif)
 
-### User Sessions Manager 
+#### User Sessions Manager 
 ![Session & Google Sheet](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/session_500px.gif)
 
-## Install
+## Install Web Server/Desktop Application/Desktop Client
 *CMU Nucleome Browser* is implemented in Go and JavaScript. It can be installed in OSX, windows, linux machines.
 
 #### GO binaries for CMU Nucleome Browser
@@ -53,6 +68,7 @@ If the binaries does not work on your machine, you can also get the source and b
 
 ## Run Application
 
+###Quick Start
 `cnb app -i [google-sheet-id or excel filename]`
 
 
@@ -63,3 +79,4 @@ If the binaries does not work on your machine, you can also get the source and b
 [![golden-layout](https://img.shields.io/badge/javascript-golden--layout-green.svg?style=flat)](http://golden-layout.com)
 [![astilectron](https://img.shields.io/badge/golang-astilectron-blue.svg?style=flat)](https://github.com/asticode/go-astilectron)
 [![gonetics](https://img.shields.io/badge/golang-gonetics-red.svg?style=flat)](https://github.com/pbenner/gonetics)
+[![imageserver](https://img.shields.io/badge/golang-imageserver-blue.svg?style=flat)](https://github.com/pierrre/imageserver)
