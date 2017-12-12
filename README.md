@@ -15,9 +15,8 @@ Now it supports bigwig, bigbed and hic format files and as demonstration it has 
 
 
 
-## Demo
-[Demo Website](http://genome.compbio.cs.cmu.edu:8080)
-
+## Web Application
+[![Web Application](https://img.shields.io/badge/WebApp-CMU--Nucleome--Browser-green.svg?style=for-the-badge)](http://genome.compbio.cs.cmu.edu:8080)
 ## Quick Start
 ### Browse genome
 ![How to Navigate](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nav_500px.gif)
