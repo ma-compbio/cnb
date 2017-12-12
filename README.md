@@ -32,13 +32,16 @@ More types of panel and customized panel interface will be added in the future.
 ### Quick Start
 #### Browse genome
 :exclamation: **hint** right click brush region to update to selected coordinates. 
+
 ![How to Navigate](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nav_500px.gif)
 #### Select tracks
 :exclamation: **hint**  All panel modules are designed as configurable, click the config toggle button in the top-right corner, will toggle between content view and config view.
+
 ![How to Select Tracks](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/select_500px.gif)
 
 #### Multi Panels (Example: DNA 3D structure) 
 :exclamation: **hint**  you can add panel to window in menu.
+
 ![DNA 3D structure](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/3d_500px.gif)
 
 #### Multi Windows (Example: genome coordinates related image panel)
@@ -47,6 +50,8 @@ More types of panel and customized panel interface will be added in the future.
 ![FISH data](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/ext_500px.gif)
 
 #### User Sessions Manager 
+:exclamation: **hint** create a new google sheet , and copy google sheet id to CNB Web Application, you can save and load your sessions easily. You can also share your sessions to your colleagues by share this google sheet to them.
+
 ![Session & Google Sheet](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/session_500px.gif)
 
 ## Install Web Server/Desktop Application/Desktop Client
