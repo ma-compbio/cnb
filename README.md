@@ -31,16 +31,18 @@ More types of panel and customized panel interface will be added in the future.
 [![Web Application](https://img.shields.io/badge/CMU-Nucleome--Browser-green.svg?style=for-the-badge)](http://genome.compbio.cs.cmu.edu:8080)
 ### Quick Start
 #### Browse genome
-:exclamation:  **Hint** right click brush region to update to selected coordinates. 
+:exclamation: **hint** right click brush region to update to selected coordinates. 
 ![How to Navigate](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nav_500px.gif)
 #### Select tracks
+:exclamation: **hint**  All panel modules are designed as configurable, click the config toggle button in the top-right corner, will toggle between content view and config view.
 ![How to Select Tracks](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/select_500px.gif)
 
 #### Multi Panels (Example: DNA 3D structure) 
+:exclamation: **hint**  you can add panel to window in menu.
 ![DNA 3D structure](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/3d_500px.gif)
 
 #### Multi Windows (Example: genome coordinates related image panel)
-The *CMU Nucleome Browser* supports extend window system.
+:exclamation: **hint**  The *CMU Nucleome Browser* supports extend window system. Click *add window* button in the menu will popup a new window which you can add more panels. These windows will communicate with each other, which means you can select any region in any window, and all panels will respond accordingly.
 
 ![FISH data](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/ext_500px.gif)
 
