@@ -83,7 +83,7 @@ To start a desktop application. Use command below.
 
 :exclamation: **hint** a creds.json file is needed for user session manage and administrator. For test you can use [this example](https://github.com/nbrowser/cnb/blob/master/creds.json). The cid and csecret only works on local 127.0.0.1:8080-8082.  If you need host a web server, you need to apply a new [oauth2 service](https://developers.google.com/identity/protocols/OAuth2) from google.
 
-:exclamation: **hint**When first time to run the application, it will automatically generate a .cnb directory in your HOME directory, it might take a while to download electron into your .cnb directory. 
+:exclamation: **hint** When first time to run the application, it will automatically generate a .cnb directory in your HOME directory, it might take a while to download electron into your .cnb directory. 
 #### Web Server Application 
 if you just want to start a web server instead of desktop application , you can add option "-m web". 
 
