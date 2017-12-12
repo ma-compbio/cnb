@@ -10,18 +10,11 @@
 
 ## Introduction
 *CMU Nucleome Browser* is an interactively browser web/desktop mixture application/platform with great extendibility for integrating distributed heterogeneous nucleome related data.
-
-It is built with a communicatable multi window/panel platform and  configurable , composable, reusable, event-driven panel modules for browsing different type data. 
-
-
+It is built with a communicatable multi [window/panel platform](https://github.com/nbrowser/sand) and  configurable , composable, reusable, event-driven panel modules for browsing different type or chromosomes coordinate related data. 
 Currently , It mainly provides 3 types of panels. 
-
 The first one is Genome Browser panel , which supports [bigwig](http://genome.ucsc.edu/goldenPath/help/bigWig.html), [bigbed](http://genome.ucsc.edu/goldenPath/help/bigBed.html) and [juicebox hic](https://github.com/theaidenlab/juicer/wiki/Data)  format files as tracks. 
-
 In 3d structrue panel, it supports PDB style ascii text file format. Here's [an example file](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/data/structure_3.txt) for 3d structure input.
-
 In image panel, it support most main stream image format. 
-
 More types of panel and customized panel interface will be added in the future.
 
 
@@ -68,9 +61,19 @@ If the binaries does not work on your machine, you can also get the source and b
 
 ## Run Application
 
-###Quick Start
+### Quick Start
+#### Desktop Application/Client
+To start a desktop application. Use command below.
+
 `cnb app -i [google-sheet-id or excel filename]`
 
+When first time to run the application, it will automatically generate a .cnb directory in your HOME directory, it might take a while to download electron into your .cnb directory. 
+#### Web Server Application 
+if you just want to start a web server instead of desktop application , you can add option "-m web". 
+
+`cnb app -i [google-sheet-id or excel filename] -m web`
+
+Then open "http://127.0.0.1:8080" in your web browser.
 
 [![google sheet example](https://img.shields.io/badge/example-gsheet-green.svg?style=flat)](https://docs.google.com/spreadsheets/d/1WaChnccn5iyKHm1ccZhRHSZmpzW7pPPrpGTSGoKTKO4/edit?usp=sharing)
 
