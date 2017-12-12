@@ -9,14 +9,18 @@
 [![MacOS](https://img.shields.io/badge/binary-macos-yellow.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/mac/cnb)
 
 ## Introduction
-*CMU Nucleome Browser* is an extendable genome browser desktop/web application for integrating all kinds of nucleome related data distributed on the internet or in your local machine.
-
+*CMU Nucleome Browser* is an interactively browser web/desktop mixture application with great extendibility for integrating distributed heterogeneous nucleome related data. 
 Now it supports bigwig, bigbed and hic format files and as demonstration it has a simple panel module for 3d DNA structure.
+
+
+![Nbrowser](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nbrowser.png)
+
+
 
 
 
 ## Web Application
-[![Web Application](https://img.shields.io/badge/WebApp-CMU--Nucleome--Browser-green.svg?style=for-the-badge)](http://genome.compbio.cs.cmu.edu:8080)
+[![Web Application](https://img.shields.io/badge/CMU-Nucleome--Browser-green.svg?style=for-the-badge)](http://genome.compbio.cs.cmu.edu:8080)
 ## Quick Start
 ### Browse genome
 ![How to Navigate](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nav_500px.gif)
@@ -36,6 +40,10 @@ Now it supports bigwig, bigbed and hic format files and as demonstration it has 
 *CMU Nucleome Browser* is implemented in Go and JavaScript. It can be installed in OSX, windows, linux machines.
 
 #### GO binaries for CMU Nucleome Browser
+[![Linux64](https://img.shields.io/badge/binary-linux-green.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/linux/cnb)
+[![Windows](https://img.shields.io/badge/binary-win-blue.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/win64/cnb.exe)
+[![MacOS](https://img.shields.io/badge/binary-macos-yellow.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/mac/cnb)
+
 The pre-compiled GO binaries for mac, linux and windows OS can be downloaded from this [link](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current). Please note that there're binaries (32 bit or 64 bit) for two type of windows machines. A quick way to tell which binaries to download is to check the memory size of your machine. The 32 bit windows OS can not support more than 4Gb of RAM/memory.
 
 #### install CMU Nucleome Browser from GitHub
@@ -46,3 +54,9 @@ If the binaries does not work on your machine, you can also get the source and b
 ## Run Application
 
 `cnb app -i [google-sheet-id or excel filename]`
+
+## Powered by
+[![d3js](https://img.shields.io/badge/javascript-d3js-yellow.svg?style=flat)](http://d3js.org)
+[![golden-layout](https://img.shields.io/badge/javascript-golden--layout-green.svg?style=flat)](http://golden-layout.com)
+[![astilectron](https://img.shields.io/badge/golang-astilectron-blue.svg?style=flat)](https://github.com/asticode/go-astilectron)
+[![gonetics](https://img.shields.io/badge/golang-gonetics-red.svg?style=flat)](https://github.com/pbenner/gonetics)
