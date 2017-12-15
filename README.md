@@ -80,7 +80,7 @@ If the binaries does not work on your machine, you can also get the source and b
 To start a desktop application. Use command below.
 
 `cnb app -i [google-sheet-id or excel filename] -c creds.json`
-
+:exclamation: **hint** A google sheet ID can be extracted from its URL. For example, the google sheet ID in the URL https://docs.google.com/spreadsheets/d/abc1234567/edit#gid=0 is "abc1234567".
 :exclamation: **hint** a creds.json file is needed for user session manage and administrator. For test you can use [this example](https://github.com/nbrowser/cnb/blob/master/creds.json). The cid and csecret only works on local 127.0.0.1:8080-8082.  If you need host a web server, you need to apply a new [oauth2 service](https://developers.google.com/identity/protocols/OAuth2) from google.
 
 :exclamation: **hint** When first time to run the application, it will automatically generate a .cnb directory in your HOME directory, it might take a while to download electron into your .cnb directory. 
