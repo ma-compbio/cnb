@@ -8,38 +8,28 @@
 [![MacOS](https://img.shields.io/badge/binary-macos-yellow.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/mac/cnb)
 
 ## Introduction
-*CMU Nucleome Browser* is an interactively browser web/desktop mixture application/platform with great extendibility for integrating distributed heterogeneous nucleome related data.
-It is built with a communicatable multi [window/panel platform](https://github.com/nbrowser/sand) and  configurable , composable, reusable, event-driven panel modules for browsing different type or chromosomes coordinate related data. 
+*CMU Nucleome Browser* is an interactive browser with both web-based and desktop applications. It has great extendibility for integrating distributed heterogeneous large-scale datasets related to nucleome.
+The browser is built with a multi [window/panel platform](https://github.com/nbrowser/sand) withe highly flexible and powerful communication among different panels. The panels are also modularized, configurable, reusable, and event-driven. 
 
-Currently , It mainly provides 3 types of panels. 
-
-The first one is Genome Browser panel , which supports [bigwig](http://genome.ucsc.edu/goldenPath/help/bigWig.html), [bigbed](http://genome.ucsc.edu/goldenPath/help/bigBed.html) and [juicebox hic](https://github.com/theaidenlab/juicer/wiki/Data)  format files as tracks. 
-
-3d structrue panel supports PDB style ascii text file format. Here's [an example file](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/data/structure_3.txt) for 3d structure input.
-
-image panel supports most main stream image format. 
-
-More types of panel and customized panel interface will be added in the future.
-
-
-
+Currently, it mainly provides three types of panels. 
+The first one is Genome Browser panel, which supports [bigwig](http://genome.ucsc.edu/goldenPath/help/bigWig.html), [bigbed](http://genome.ucsc.edu/goldenPath/help/bigBed.html) and [juicebox hic](https://github.com/theaidenlab/juicer/wiki/Data)  format files as tracks. 
+The second panel is for 3D structrue, which supports PDB style ascii text file format. Here is [an example file](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/data/structure_3.txt) for 3D structure input.
+The third panel is image panel that supports most main stream image formats. 
+More types of panel and customized panel interface will be implemented and incorporated in the future.
 
 **Figure** CMU Nucleome Browser Design and Concepts
 ![Nbrowser](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nbrowser.png)
-
-
-
 
 
 ## Web Application
 [![Web Application](https://img.shields.io/badge/CMU-Nucleome--Browser-green.svg?style=for-the-badge)](http://genome.compbio.cs.cmu.edu:8080)
 ### Quick Start
 #### Browse genome
-:exclamation: **hint** right click brush region to update to selected coordinates. 
+:exclamation: **hint** right click brush region to update the selected coordinates. 
 
 ![How to Navigate](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nav_500px.gif)
 #### Select tracks
-:exclamation: **hint**  All panel modules are designed as configurable, click the config toggle button in the top-right corner, will toggle between content view and config view.
+:exclamation: **hint**  All panel modules are designed as configurable. You can click the config toggle button in the top-right corner, which will toggle between content view and config view.
 
 ![How to Select Tracks](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/select_500px.gif)
 
@@ -49,27 +39,27 @@ More types of panel and customized panel interface will be added in the future.
 ![DNA 3D structure](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/3d_500px.gif)
 
 #### Multi Windows (Example: genome coordinates related image panel)
-:exclamation: **hint**  The *CMU Nucleome Browser* supports extend window system. Click *add window* button in the menu will popup a new window which you can add more panels. These windows will communicate with each other, which means you can select any region in any window, and all panels will respond accordingly.
+:exclamation: **hint**  The *CMU Nucleome Browser* supports multiple window system. Click *add window* button in the menu will pop up a new window, which would allow you to add more panels. These windows have the capabilities to communicate with each other, which means you can select any region in any window, and all panels will respond accordingly.
 
 ![FISH data](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/ext_500px.gif)
 
 #### User Sessions Manager 
-:exclamation: **hint** create a new google sheet , and copy google sheet id to CNB Web Application, you can save and load your sessions easily. You can also share your sessions to your colleagues by share this google sheet to them.
+:exclamation: **hint** create a new Google sheet, and copy google sheet ID to CNB Web Application. You can save and load your sessions easily. You can also share your sessions with your colleagues by sharing this Google sheet with them.
 
 ![Session & Google Sheet](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/session_500px.gif)
 
 ## Install Web Server/Desktop Application/Desktop Client
-*CMU Nucleome Browser* is implemented in Go and JavaScript. It can be installed in OSX, windows, linux machines.
+*CMU Nucleome Browser* is implemented in Go and JavaScript. It can be installed in OSX, Windows, and Linux machines.
 
 #### GO binaries for CMU Nucleome Browser
 [![Linux64](https://img.shields.io/badge/binary-linux-green.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/linux/cnb)
 [![Windows](https://img.shields.io/badge/binary-win-blue.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/win64/cnb.exe)
 [![MacOS](https://img.shields.io/badge/binary-macos-yellow.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/mac/cnb)
 
-The pre-compiled GO binaries for mac, linux and windows OS can be downloaded from this [link](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current). Please note that there're binaries (32 bit or 64 bit) for two type of windows machines. A quick way to tell which binaries to download is to check the memory size of your machine. The 32 bit windows OS can not support more than 4Gb of RAM/memory.
+The pre-compiled GO binaries for Mac, Linux, and Windows OS can be downloaded from this [link](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current). Please note that there are binaries (32 bit or 64 bit) for two types of Windows machines. An easy way to tell which binaries to download is to check the memory size of your machine. The 32 bit Windows OS cannot support more than 4Gb of RAM/memory.
 
 #### install CMU Nucleome Browser from GitHub
-If the binaries does not work on your machine, you can also get the source and binary files from this site via GO. (You have to get GO environment installed beforehead. To get GO installed, you can refer to [this link](https://golang.org/doc/install)).
+If the binaries does not work on your machine, you can also get the source and binary files from this site via GO. (You have to get GO environment installed first. To get GO installed, you can refer to [this link](https://golang.org/doc/install)).
 
 `go get -u github.com/nbrowser/cnb`
 
@@ -81,11 +71,11 @@ To start a desktop application. Use command below.
 
 `cnb app -i [google-sheet-id or excel filename] -c creds.json`
 
-:exclamation: **hint** A google sheet ID can be extracted from its URL. For example, the google sheet ID in the URL https://docs.google.com/spreadsheets/d/abc1234567/edit#gid=0 is "abc1234567".
+:exclamation: **hint** A google sheet ID can be extracted from its URL. For example, the Google sheet ID in the URL https://docs.google.com/spreadsheets/d/abc1234567/edit#gid=0 is "abc1234567".
 
-:exclamation: **hint** a creds.json file is needed for user session manage and administrator. For test you can use [this example](https://github.com/nbrowser/cnb/blob/master/creds.json). The cid and csecret only works on local 127.0.0.1:8080-8082.  If you need host a web server, you need to apply a new [oauth2 service](https://developers.google.com/identity/protocols/OAuth2) from google.
+:exclamation: **hint** a creds.json file is needed for user session management and administration. To test you can use [this example](https://github.com/nbrowser/cnb/blob/master/creds.json). The cid and csecret only work on local 127.0.0.1:8080-8082. If you need to host a web server, you need to apply a new [oauth2 service](https://developers.google.com/identity/protocols/OAuth2) from Google.
 
-:exclamation: **hint** When first time to run the application, it will automatically generate a .cnb directory in your HOME directory, it might take a while to download electron into your .cnb directory. 
+:exclamation: **hint** When it is your first time to run the application, it will automatically generate a .cnb directory in your HOME directory, it might take a while to download electron into your .cnb directory. 
 #### Web Server Application 
 if you just want to start a web server instead of desktop application , you can add option "-m web". 
 
