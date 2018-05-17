@@ -7,14 +7,14 @@ import (
 )
 
 const (
-	VERSION = "0.0.0"
+	VERSION = "0.0.7"
 )
 
 func main() {
 	app := cli.NewApp()
 	app.Version = VERSION
-	app.Name = "s2"
-	app.Usage = "s2 tools"
+	app.Name = "sandNb"
+	app.Usage = "cnb develop version"
 	app.EnableBashCompletion = true //TODO
 	app.Flags = []cli.Flag{
 		cli.BoolFlag{
@@ -41,7 +41,7 @@ func main() {
 				cli.StringFlag{
 					Name:  "mode,m",
 					Usage: "start web or desktop application (w/d)",
-					Value: "d",
+					Value: "w",
 				},
 				cli.StringFlag{
 					Name:  "root,r",
@@ -52,6 +52,11 @@ func main() {
 					Name:  "cred,c",
 					Usage: "cred.json config file",
 					Value: "./creds.json",
+				},
+				cli.StringFlag{
+					Name:  "ext,e",
+					Usage: "chrome extenstion id, Default is Nucleome Browswer Extension in chrome web store",
+					Value: "djcdicpaejhpgncicoglfckiappkoeof",
 				},
 			},
 		},
