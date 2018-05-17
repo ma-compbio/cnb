@@ -1,4 +1,4 @@
-# CMU Nucleome Browser
+# ![icon](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/image/icon.png)CMU Nucleome Browser
 [![Build Status](https://travis-ci.org/nbrowser/cnb.svg?branch=master)](https://travis-ci.org/nbrowser/cnb)
 [![Go Report Card](https://goreportcard.com/badge/github.com/nbrowser/cnb)](https://goreportcard.com/report/github.com/nbrowser/cnb)
 [![Releases](https://img.shields.io/github/release/nbrowser/cnb.svg)](https://github.com/nbrowser/cnb/releases)
@@ -6,6 +6,9 @@
 [![Linux64](https://img.shields.io/badge/binary-linux-green.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/linux/cnb)
 [![Windows](https://img.shields.io/badge/binary-win-blue.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/win64/cnb.exe)
 [![MacOS](https://img.shields.io/badge/binary-macos-yellow.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/mac/cnb)
+
+
+
 
 ## Introduction
 *CMU Nucleome Browser* is an interactive browser with both web-based and desktop applications. It has great extendibility for integrating distributed heterogeneous large-scale datasets related to nucleome.
@@ -18,6 +21,10 @@ The third panel is image panel that supports most main stream image formats.
 More types of panel and customized panel interface will be implemented and incorporated in the future.
 
 **Figure** CMU Nucleome Browser Design and Concepts
+***Figure 1***
+![N Browsers](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/image/pipeline.png)
+
+***Figure 2***
 ![Nbrowser](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/gifs/nbrowser.png)
 
 
