@@ -1,4 +1,4 @@
-# ![icon](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/image/icon.png)CMU Nucleome Browser
+# ![icon](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/image/icon2.png)CMU Nucleome Browser
 [![Build Status](https://travis-ci.org/nbrowser/cnb.svg?branch=master)](https://travis-ci.org/nbrowser/cnb)
 [![Go Report Card](https://goreportcard.com/badge/github.com/nbrowser/cnb)](https://goreportcard.com/report/github.com/nbrowser/cnb)
 [![Releases](https://img.shields.io/github/release/nbrowser/cnb.svg)](https://github.com/nbrowser/cnb/releases)
