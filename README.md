@@ -22,24 +22,20 @@
 ## Web Application
 [![Web Application](https://img.shields.io/badge/CMU-Nucleome--Browser-green.svg?style=for-the-badge)](http://genome.compbio.cs.cmu.edu:8080/v1/pub.html)
 
-### Quick Start
-
-#### GO binaries for CMU Nucleome Browser Data Server Tools
+## Start a Data Server
+### GO binaries for CMU Nucleome Browser Data Server Tools
 [![Linux64](https://img.shields.io/badge/binary-linux-green.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnbData/current/linux/cnbData)
 [![Windows](https://img.shields.io/badge/binary-win-blue.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnbData/current/win64/cnbData.exe)
 [![MacOS](https://img.shields.io/badge/binary-macos-yellow.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnbData/current/mac/cnbData)
 
 The pre-compiled GO binaries for Mac, Linux, and Windows OS can be downloaded from this [link](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnbData/current). Please note that there are binaries (32 bit or 64 bit) for two types of Windows machines. An easy way to tell which binaries to download is to check the memory size of your machine. The 32 bit Windows OS cannot support more than 4Gb of RAM/memory.
 
-#### install CMU Nucleome Browser Data Server from GitHub
+### install CMU Nucleome Browser Data Server from GitHub
 If the binaries does not work on your machine, you can also get the source and binary files from this site via GO. (You have to get GO environment installed first. To get GO installed, you can refer to [this link](https://golang.org/doc/install)).
 
 `go get -u github.com/ma-compbio/cnb/...`
 
-## Start a Data Server
-
-### Quick Start
-#### Desktop Application/Client
+### Start a data server
 To start a data server. Use command below in your local machine.
 
 `cnbData start -i [google-sheet-id or excel filename]`
@@ -49,9 +45,10 @@ To start a data server. Use command below in your local machine.
 
 :exclamation: **hint** When it is your first time to run the application, it will automatically generate a .cnbData directory in your HOME directory.
 
+### Visualize your data 
 Then you should able to see your host data in our [web application](http://genome.compbio.cs.cmu.edu:8080)
 
-#### Input GSheet or Xls
+### Input GSheet or Xls
 [![google sheet example](https://img.shields.io/badge/example-gsheet-green.svg?style=flat)](https://docs.google.com/spreadsheets/d/1WaChnccn5iyKHm1ccZhRHSZmpzW7pPPrpGTSGoKTKO4/edit?usp=sharing)
 
 ## Powered by
