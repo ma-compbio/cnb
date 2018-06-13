@@ -10,9 +10,11 @@
 ## Introduction
 
 [*CMU Nucleome Browser* Introduction Slides](https://docs.google.com/presentation/d/1KQx4Si6pbCeM2dhqJBkRPuSmwr7tF_CpE-siZtbzqXg/edit?usp=sharing)
+
 [*CMU Nucleome Browser* Website](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb)
 
 **Figure** CMU Nucleome Browser Design and Concepts
+
 ***Figure 1***
 ![N Browsers](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/image/pipeline.png)
 
@@ -38,15 +40,16 @@ If the binaries does not work on your machine, you can also get the source and b
 
 ### Quick Start
 #### Desktop Application/Client
-To start a desktop application. Use command below.
+To start a data server. Use command below in your local machine.
 
-`cnb app -i [google-sheet-id or excel filename]`
+`cnbData start -i [google-sheet-id or excel filename]`
 
 :exclamation: **hint** A google sheet ID can be extracted from its URL. For example, the Google sheet ID in the URL https://docs.google.com/spreadsheets/d/abc1234567/edit#gid=0 is "abc1234567".
 
 
 :exclamation: **hint** When it is your first time to run the application, it will automatically generate a .cnbData directory in your HOME directory.
 
+Then you should able to see your host data in our [web application](http://genome.compbio.cs.cmu.edu:8080)
 
 #### Input GSheet or Xls
 [![google sheet example](https://img.shields.io/badge/example-gsheet-green.svg?style=flat)](https://docs.google.com/spreadsheets/d/1WaChnccn5iyKHm1ccZhRHSZmpzW7pPPrpGTSGoKTKO4/edit?usp=sharing)
