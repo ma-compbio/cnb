@@ -3,9 +3,6 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/nbrowser/cnb)](https://goreportcard.com/report/github.com/nbrowser/cnb)
 [![Releases](https://img.shields.io/github/release/nbrowser/cnb.svg)](https://github.com/nbrowser/cnb/releases)
 [![Licenses](https://img.shields.io/badge/license-gpl3-orange.svg)](https://opensource.org/licenses/GPL-3.0)
-[![Linux64](https://img.shields.io/badge/binary-linux-green.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/linux/cnb)
-[![Windows](https://img.shields.io/badge/binary-win-blue.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/win64/cnb.exe)
-[![MacOS](https://img.shields.io/badge/binary-macos-yellow.svg?style=flat)](http://genome.compbio.cs.cmu.edu/~xiaopenz/cnb/current/mac/cnb)
 
 ## Introduction
 
@@ -45,7 +42,7 @@ To start a data server. Use command below in your local machine.
 
 :exclamation: **hint** When it is your first time to run the application, it will automatically generate a .cnbData directory in your HOME directory.
 
-### Visualize your data 
+### Visualize your data
 Then you should able to see your host data in our [web application](http://genome.compbio.cs.cmu.edu:8080)
 
 ### Input GSheet or Xls
