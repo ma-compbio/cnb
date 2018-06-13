@@ -46,7 +46,7 @@ To start a data server. Use command below in your local machine.
 Then you should able to see your host data in our [web application](http://genome.compbio.cs.cmu.edu:8080)
 
 ### Input GSheet or Xls
-[![google sheet example](https://img.shields.io/badge/example-gsheet-green.svg?style=flat)](https://docs.google.com/spreadsheets/d/1WaChnccn5iyKHm1ccZhRHSZmpzW7pPPrpGTSGoKTKO4/edit?usp=sharing)
+[![google sheet example](https://img.shields.io/badge/example-gsheet-green.svg?style=flat)](https://docs.google.com/spreadsheets/d/1DEvA94QkN1KZQT51IYOOcIvGL2Ux7Qwqe5IpE9Pe1N8/edit?usp=sharing)
 
 ## Powered by
 ### Our Lib
