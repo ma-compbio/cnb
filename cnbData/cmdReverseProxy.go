@@ -14,6 +14,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/nimezhu/asheets"
 	"github.com/nimezhu/data"
+	"github.com/rs/cors"
 	"github.com/urfave/cli"
 	sheets "google.golang.org/api/sheets/v4"
 )
@@ -44,7 +45,8 @@ func CmdRP(c *cli.Context) {
 	}
 
 	//Wrapper to Class
-	head, rowid, valueMap := asheets.ReadSheet(title, srv, sheetid, "A")
+	v, _ := asheets.ReadSheet(title, srv, sheetid, "A")
+	head, rowid, valueMap := v.ColIds, v.RowIds, v.RowValue
 	//fmt.Println(valueMap)
 	for i, r := range rowid {
 		fmt.Println(i, r)
@@ -88,8 +90,8 @@ func CmdRP(c *cli.Context) {
 
 	fmt.Println("Done")
 	router := mux.NewRouter()
-	cors := data.CorsFactory("*")
-	router.Use(cors)
+	//cors := data.CorsFactory(CORS)
+	//router.Use(cors)
 	router.HandleFunc("/version", func(w http.ResponseWriter, r *http.Request) {
 		a, _ := json.Marshal(rpApp)
 		w.Write(a)
@@ -172,7 +174,9 @@ func CmdRP(c *cli.Context) {
 			}
 		}
 	})
-	server := &http.Server{Addr: ":" + strconv.Itoa(port), Handler: router}
+	hc := cors.New(corsOptions)
+	handler := hc.Handler(router)
+	server := &http.Server{Addr: ":" + strconv.Itoa(port), Handler: handler}
 	log.Println("Please open http://127.0.0.1:" + strconv.Itoa(port))
 	err = server.ListenAndServe()
 	if err != nil {

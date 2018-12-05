@@ -2,20 +2,32 @@ package main
 
 import (
 	"os"
+	"path"
 
+	"github.com/rs/cors"
 	"github.com/urfave/cli"
 )
 
 const (
-	VERSION = "0.0.8"
+	VERSION = "0.0.9"
 	DIR     = ".cnbData"
+)
+
+var (
+	CORS        = []string{"http://genome.compbio.cs.cmu.edu:8080", "http://x7.andrew.cmu.edu:8080", "chrome-extension://djcdicpaejhpgncicoglfckiappkoeof", "chrome-extension://gedcoafficobgcagmjpplpnmempkcpfp", "https://genome.compbio.cs.cmu.edu"}
+	corsOptions = cors.Options{
+		AllowedOrigins:   CORS,
+		AllowCredentials: true,
+		AllowedMethods:   []string{"GET", "POST", "OPTIONS"},
+		AllowedHeaders:   []string{"Authorization"},
+	}
 )
 
 func main() {
 	app := cli.NewApp()
 	app.Version = VERSION
 	app.Name = "cnb dataserver tools"
-	app.Usage = "cnbData start -i [[google_sheet_id]]"
+	app.Usage = "cnbData start -i [[google_sheet_id OR xls file]] -p [[port]]"
 	app.EnableBashCompletion = true //TODO
 	app.Flags = []cli.Flag{
 		cli.BoolFlag{
@@ -94,6 +106,35 @@ func main() {
 					Name:  "root,r",
 					Usage: "root directory",
 					Value: home,
+				},
+			},
+		},
+		{
+			Name:   "file",
+			Usage:  "start a file server",
+			Action: CmdFile,
+			Flags: []cli.Flag{
+				cli.StringFlag{
+					Name:  "root,r", //TODO
+					Usage: "root directory",
+					Value: home,
+				},
+				cli.IntFlag{
+					Name:  "port,p",
+					Usage: "data server port",
+					Value: 8080,
+				},
+			},
+		},
+		{
+			Name:   "userdb",
+			Usage:  "user db info",
+			Action: CmdUserDb,
+			Flags: []cli.Flag{
+				cli.StringFlag{
+					Name:  "i,input", //TODO
+					Usage: "input file",
+					Value: path.Join(home, ".cnb/user.db"),
 				},
 			},
 		},

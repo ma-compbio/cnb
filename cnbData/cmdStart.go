@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"net/http"
 	"path"
 
 	"github.com/gorilla/mux"
@@ -14,7 +15,6 @@ import (
 func CmdStart(c *cli.Context) error {
 	uri := c.String("input")
 	port := c.Int("port")
-	mode := "w"
 	root := c.String("root")
 	router := mux.NewRouter()
 	if GuessURIType(uri) == "gsheet" {
@@ -37,10 +37,27 @@ func CmdStart(c *cli.Context) error {
 	s.InitHome(root)
 	idxRoot := s.InitIdxRoot(root) //???
 	l := data.NewLoader(idxRoot)
+	l.Plugins["tsv"] = pluginTsv
 	l.Load(uri, router)
-	cors := data.CorsFactory("*")
-	router.Use(cors)
-	s.Start(mode, port, router)
+
+	router.Use(cred)
+	//router.Use(userMiddleware)
+	/* Add User Control
+	 * For Specific Group User Email
+	 */
+	s.StartDataServer(port, router, &corsOptions)
 
 	return nil
+}
+
+func strictCorsFactory(sites string) func(http.Handler) http.Handler {
+	return func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			if r.Header.Get("Origin") == sites {
+				next.ServeHTTP(w, r)
+			} else {
+				w.Write([]byte("not authorized"))
+			}
+		})
+	}
 }
