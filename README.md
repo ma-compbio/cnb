@@ -6,14 +6,10 @@
 
 ## Introduction
 
-[*CMU Nucleome Browser* Introduction Slides](https://docs.google.com/presentation/d/1KQx4Si6pbCeM2dhqJBkRPuSmwr7tF_CpE-siZtbzqXg/edit?usp=sharing)
+[*CMU Nucleome Browser*](https://genome.compbio.cs.cmu.edu/static/)
 
-[*CMU Nucleome Browser* Website](http://genome.compbio.cs.cmu.edu:8080/static/)
 
-**Figure** CMU Nucleome Browser Design and Concepts
 
-***Figure 1***
-![N Browsers](https://genome.compbio.cs.cmu.edu/static/image/pipeline.png)
 
 
 ## Web Application
