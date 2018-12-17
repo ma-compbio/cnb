@@ -2,14 +2,13 @@ package main
 
 import (
 	"os"
-	"path"
 
 	"github.com/rs/cors"
 	"github.com/urfave/cli"
 )
 
 const (
-	VERSION = "0.0.9"
+	VERSION = "0.0.10"
 	DIR     = ".cnbData"
 )
 
@@ -39,12 +38,12 @@ func main() {
 	app.Commands = []cli.Command{
 		{
 			Name:   "start",
-			Usage:  "start an data server",
+			Usage:  "start a data server",
 			Action: CmdStart,
 			Flags: []cli.Flag{
 				cli.StringFlag{
 					Name:  "input,i",
-					Usage: "input data tsv/xls/google sheet id",
+					Usage: "input data xls/google sheet id",
 					Value: "",
 				},
 				cli.IntFlag{
@@ -54,58 +53,17 @@ func main() {
 				},
 				cli.StringFlag{
 					Name:  "root,r",
-					Usage: "root directory",
+					Usage: "root directory, where store credentials and index files, defualt is $HOME/.cnbData",
 					Value: home,
 				},
-			},
-		},
-		{
-			Name:   "rproxy",
-			Usage:  "start an data server reverse proxy",
-			Action: CmdRP,
-			Flags: []cli.Flag{
+				cli.BoolFlag{
+					Name:  "local,l",
+					Usage: "serve 127.0.0.1 only",
+				},
 				cli.StringFlag{
-					Name:  "input,i",
-					Usage: "input data google sheet id",
+					Name:  "code,c",
+					Usage: "set password for server, override -l",
 					Value: "",
-				},
-				cli.StringFlag{
-					Name:  "title,t",
-					Usage: "sheet title",
-					Value: "Sheet1",
-				},
-				cli.IntFlag{
-					Name:  "port,p",
-					Usage: "data server port",
-					Value: 8080,
-				},
-				cli.StringFlag{
-					Name:  "root,r",
-					Usage: "root directory",
-					Value: home,
-				},
-			},
-		},
-
-		{
-			Name:   "maintain",
-			Usage:  "maintain data servers",
-			Action: CmdMaintain,
-			Flags: []cli.Flag{
-				cli.StringFlag{
-					Name:  "input,i",
-					Usage: "input data google sheet id",
-					Value: "",
-				},
-				cli.StringFlag{
-					Name:  "title,t",
-					Usage: "sheet title",
-					Value: "Sheet1",
-				},
-				cli.StringFlag{
-					Name:  "root,r",
-					Usage: "root directory",
-					Value: home,
 				},
 			},
 		},
@@ -123,18 +81,6 @@ func main() {
 					Name:  "port,p",
 					Usage: "data server port",
 					Value: 8080,
-				},
-			},
-		},
-		{
-			Name:   "userdb",
-			Usage:  "user db info",
-			Action: CmdUserDb,
-			Flags: []cli.Flag{
-				cli.StringFlag{
-					Name:  "i,input", //TODO
-					Usage: "input file",
-					Value: path.Join(home, ".cnb/user.db"),
 				},
 			},
 		},
